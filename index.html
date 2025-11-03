@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sweet Delights — Final POE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Sweet Delights — Final POE</h1>
+    <nav>
+      <button id="nav-home" class="nav-btn" aria-controls="home-view">Home</button>
+      <button id="nav-manager" class="nav-btn" aria-controls="manager-view">Menu Management</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME VIEW -->
+    <section id="home-view" class="view">
+      <h2>Menu — Full</h2>
+      <div class="controls">
+        <label for="filterCourse">Filter by course:</label>
+        <select id="filterCourse" aria-label="Filter menu by course">
+          <option value="all">All</option>
+          <option value="Starter">Starters</option>
+          <option value="Main">Mains</option>
+          <option value="Dessert">Desserts</option>
+          <option value="Drink">Drinks</option>
+        </select>
+      </div>
+
+      <div id="averages" class="averages" aria-live="polite"></div>
+
+      <div id="menu-list" class="menu-list" aria-live="polite"></div>
+    </section>
+
+    <!-- MANAGER VIEW -->
+    <section id="manager-view" class="view hidden" aria-hidden="true">
+      <h2>Menu Management (Chef)</h2>
+
+      <form id="addForm" class="add-form">
+        <label>
+          Name
+          <input id="itemName" required />
+        </label>
+        <label>
+          Price (R)
+          <input id="itemPrice" type="number" step="0.01" required />
+        </label>
+        <label>
+          Course
+          <select id="itemCourse">
+            <option value="Starter">Starter</option>
+            <option value="Main">Main</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Drink">Drink</option>
+          </select>
+        </label>
+        <button type="submit" class="btn">Add Item</button>
+      </form>
+
+      <h3>Current Menu Items</h3>
+      <div id="manager-list" class="menu-list"></div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <small>Sweet Delights — Final POE · ST######</small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
