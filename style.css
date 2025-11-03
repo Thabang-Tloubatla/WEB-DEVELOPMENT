@@ -13,14 +13,14 @@ body{font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);margin:0;
 nav{display:flex;gap:8px}
 .nav-btn{background:transparent;border:1px solid var(--accent);padding:6px 10px;border-radius:8px;cursor:pointer}
 main{max-width:980px;margin:18px auto;display:grid;gap:14px}
-.view{background:var(--card);border:1px solid var(--border);padding:16px;border-radius:10px}
+.view{background:var(--card);border:1px solid var(--border);padding:16px;border-radius:10px}     // we actually did padding as an activity in class
 .hidden{display:none}
 .controls{margin-bottom:12px;display:flex;gap:12px;align-items:center}
 .menu-list{display:grid;gap:10px}
 .card{border:1px solid var(--border);padding:10px;border-radius:8px;background:#fff;display:flex;justify-content:space-between;align-items:center}
 .btn{background:var(--accent);color:white;border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
 .add-form{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.add-form label{display:flex;flex-direction:column;font-size:13px;color:var(--muted)}
+.add-form label{display:flex;flex-direction:column;font-size:13px;color:var(--muted)}     // most of the css i learnt in class from MRS Sibanda
 .averages{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 .avg-card{background:#fff;padding:8px;border-radius:8px;border:1px solid var(--border);min-width:140px}
 .info{font-size:14px;color:var(--muted)}
